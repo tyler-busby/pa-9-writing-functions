@@ -103,14 +103,14 @@ Fill in the skeleton below. Remember the default should be `start` as 1.
 ```{r}
 #| label: q7
 
-every_other <- function(vec, _________){
+every_other <- function(vec, start = 1){
   
   if (start == 2) {
-    vec[]
+    vec[(seq_along(vec)) %% 2 == 0]
   } 
   
   else if (start == 1) {
-    vec[]
+    vec[(seq_along(vec)) %% 2 > 0]
   }
 
 }
