@@ -1,6 +1,6 @@
 ---
 title: "PA 9: Writing Functions"
-author: "INSERT NAMES HERE"
+author: "Aiden Roach"
 format: 
   html:
     embed-resources: true
@@ -24,6 +24,7 @@ You will write several small functions, then use them to unscramble a message. M
 #| label: q1
 
 nums <- 3:12
+round(nums / min(nums, na.rm = TRUE))
 
 ```
 
@@ -33,8 +34,8 @@ nums <- 3:12
 ```{r}
 #| label: q2
 
-divide_and_round <- function(vec){
-
+divide_and_round <- function(x){
+round(x / min(x, na.rm = TRUE))
 }
 ```
 
