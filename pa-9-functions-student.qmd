@@ -147,7 +147,7 @@ nums[cumsum(nums) >= 30]  #returns only numbers 8+
 #| label: q9
 
 shorten <- function(x, sum){
-
+x[cumsum(x) >= sum]
 }
 
 ```
